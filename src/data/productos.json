@@ -1,0 +1,210 @@
+{
+  "equipos": [
+    {
+      "id": "1",
+      "nombre": "Panel Solar 605W vortex N",
+      "marca": "Vortex N",
+      "categoria": "Panel Solar",
+      "descripcion": "Alta eficiencia energética con tecnología monocristalina de última generación. Ideal para instalaciones residenciales y comerciales pequeñas.",
+      "imagen": "/images/productos/vortexN.png",
+      "potencia": "605W",
+      "eficiencia": "22.54%",
+      "dimensiones": "1722 x 1134 x 30 mm",
+      "certificaciones": ["IEC 61215", "IEC 61730", "CE"],
+      "caracteristicas": [
+        "Resistente a condiciones extremas",
+        "Certificación internacional",
+        "Bajo coeficiente de temperatura"
+      ]
+    },
+        {
+      "id": "2",
+      "nombre": "Panel Solar 605W vortex N",
+      "marca": "Vortex N",
+      "categoria": "Panel Solar",
+      "descripcion": "Alta eficiencia energética con tecnología monocristalina de última generación. Ideal para instalaciones residenciales y comerciales pequeñas.",
+      "imagen": "/images/productos/vortexN.png",
+      "potencia": "605W",
+      "eficiencia": "22.54%",
+      "dimensiones": "1722 x 1134 x 30 mm",
+      "certificaciones": ["IEC 61215", "IEC 61730", "CE"],
+      "caracteristicas": [
+        "Resistente a condiciones extremas",
+        "Certificación internacional",
+        "Bajo coeficiente de temperatura"
+      ]
+    },
+    {
+      "id": "inversor-3kw-hibrido",
+      "nombre": "Inversor Solar Híbrido 3kW",
+      "marca": "Growatt",
+      "categoria": "Inversor",
+      "descripcion": "Conversión eficiente de energía DC a AC con capacidad de almacenamiento. Monitoreo en tiempo real vía WiFi y protección integrada multi-nivel.",
+      "imagen": "/images/productos/inversor-3kw.jpg",
+      "potencia": "3000W",
+      "eficiencia": "97.5%",
+      "garantia": "10 años",
+      "voltaje_entrada": "150-550 VDC",
+      "voltaje_salida": "220/230 VAC",
+      "peso": "15 kg",
+      "caracteristicas": [
+        "Eficiencia del 97.5%",
+        "Compatible con baterías de litio",
+        "Monitoreo WiFi integrado",
+        "Diseño compacto y silencioso"
+      ]
+    },
+    {
+      "id": "inversor-5kw-on-grid",
+      "nombre": "Inversor Solar On-Grid 5kW",
+      "marca": "Huawei",
+      "categoria": "Inversor Premium",
+      "descripcion": "Alta capacidad para instalaciones comerciales. Tecnología de optimización AI y gestión inteligente de energía para máxima producción.",
+      "imagen": "/images/productos/inversor-5kw.jpg",
+      "potencia": "5000W",
+      "eficiencia": "98.6%",
+      "garantia": "10 años extendible a 20",
+      "voltaje_entrada": "200-600 VDC",
+      "voltaje_salida": "220/380 VAC",
+      "peso": "17.5 kg",
+      "caracteristicas": [
+        "Eficiencia del 98.6%",
+        "Optimización AI integrada",
+        "Monitoreo remoto 4G/WiFi",
+        "Protección IP65 para exterior"
+      ]
+    },
+    {
+      "id": "microinversor-600w",
+      "nombre": "Microinversor 600W",
+      "marca": "Enphase",
+      "categoria": "Microinversor",
+      "descripcion": "Sistema modular de alta confiabilidad. Cada panel trabaja de forma independiente para maximizar la producción incluso con sombras parciales.",
+      "imagen": "/images/productos/microinversor-600w.jpg",
+      "potencia": "600W",
+      "eficiencia": "97.0%",
+      "garantia": "25 años",
+      "voltaje_entrada": "16-60 VDC",
+      "voltaje_salida": "220 VAC",
+      "peso": "1.2 kg",
+      "caracteristicas": [
+        "Eficiencia del 97%",
+        "Monitoreo por panel individual",
+        "Máxima seguridad sin alto voltaje DC",
+        "Expansión modular sencilla"
+      ]
+    },
+        {
+      "id": "6",
+      "nombre": "Panel Solar 605W vortex N",
+      "marca": "Vortex N",
+      "categoria": "Panel Solar",
+      "descripcion": "Alta eficiencia energética con tecnología monocristalina de última generación. Ideal para instalaciones residenciales y comerciales pequeñas.",
+      "imagen": "/images/productos/vortexN.png",
+      "potencia": "605W",
+      "eficiencia": "22.54%",
+      "dimensiones": "1722 x 1134 x 30 mm",
+      "certificaciones": ["IEC 61215", "IEC 61730", "CE"],
+      "caracteristicas": [
+        "Resistente a condiciones extremas",
+        "Certificación internacional",
+        "Bajo coeficiente de temperatura"
+      ]
+    },
+    {
+      "id": "inversor-8kw-trifasico",
+      "nombre": "Inversor Trifásico 8kW",
+      "marca": "Fronius",
+      "categoria": "Inversor Industrial",
+      "descripcion": "Potencia industrial para grandes instalaciones. Sistema de enfriamiento inteligente y protección avanzada contra sobretensiones.",
+      "imagen": "/images/productos/inversor-8kw.jpg",
+      "potencia": "8000W",
+      "eficiencia": "98.1%",
+      "garantia": "10 años",
+      "voltaje_entrada": "200-800 VDC",
+      "voltaje_salida": "380/400 VAC trifásico",
+      "peso": "24 kg",
+      "caracteristicas": [
+        "Eficiencia del 98.1%",
+        "Salida trifásica balanceada",
+        "Ideal para comercios e industrias",
+        "Sistema de enfriamiento activo"
+      ]
+    },
+    {
+      "id": "1",
+      "nombre": "Panel Solar 605W vortex N",
+      "marca": "Vortex N",
+      "categoria": "Panel Solar",
+      "descripcion": "Alta eficiencia energética con tecnología monocristalina de última generación. Ideal para instalaciones residenciales y comerciales pequeñas.",
+      "imagen": "/images/productos/vortexN.png",
+      "potencia": "605W",
+      "eficiencia": "22.54%",
+      "dimensiones": "1722 x 1134 x 30 mm",
+      "certificaciones": ["IEC 61215", "IEC 61730", "CE"],
+      "caracteristicas": [
+        "Resistente a condiciones extremas",
+        "Certificación internacional",
+        "Bajo coeficiente de temperatura"
+      ]
+    }
+  ],
+  "estructuras": [
+    {
+      "id": "1",
+      "nombre": "Raka",
+      "categoria": "Estructura Premium",
+      "descripcion": "Sistema de montaje optimizado para techos planos comerciales e industriales. Aluminio anodizado de alta resistencia con sistema de ajuste de inclinación rápido.",
+      "imagen": "/images/estructuras/rakas.png",
+      "materiales": [
+        "PTR Acero Negro",
+        "Unicanal de Aluminio Anonizado"
+      ],
+      "peso_promedio": "17 kg s/panel"
+    },    {
+      "id": "2",
+      "nombre": "Raka",
+      "categoria": "Estructura Premium",
+      "descripcion": "Sistema de montaje optimizado para techos planos comerciales e industriales. Aluminio anodizado de alta resistencia con sistema de ajuste de inclinación rápido.",
+      "imagen": "/images/estructuras/rakas.png",
+      "materiales": [
+        "PTR Acero Negro",
+        "Unicanal de Aluminio Anonizado"
+      ],
+      "peso_promedio": "17 kg s/panel"
+    },    {
+      "id": "3",
+      "nombre": "Raka",
+      "categoria": "Estructura Premium",
+      "descripcion": "Sistema de montaje optimizado para techos planos comerciales e industriales. Aluminio anodizado de alta resistencia con sistema de ajuste de inclinación rápido.",
+      "imagen": "/images/estructuras/rakas.png",
+      "materiales": [
+        "PTR Acero Negro",
+        "Unicanal de Aluminio Anonizado"
+      ],
+      "peso_promedio": "17 kg s/panel"
+    },    {
+      "id": "4",
+      "nombre": "Raka",
+      "categoria": "Estructura Premium",
+      "descripcion": "Sistema de montaje optimizado para techos planos comerciales e industriales. Aluminio anodizado de alta resistencia con sistema de ajuste de inclinación rápido.",
+      "imagen": "/images/estructuras/rakas.png",
+      "materiales": [
+        "PTR Acero Negro",
+        "Unicanal de Aluminio Anonizado"
+      ],
+      "peso_promedio": "17 kg s/panel"
+    },    {
+      "id": "5",
+      "nombre": "Raka",
+      "categoria": "Estructura Premium",
+      "descripcion": "Sistema de montaje optimizado para techos planos comerciales e industriales. Aluminio anodizado de alta resistencia con sistema de ajuste de inclinación rápido.",
+      "imagen": "/images/estructuras/rakas.png",
+      "materiales": [
+        "PTR Acero Negro",
+        "Unicanal de Aluminio Anonizado"
+      ],
+      "peso_promedio": "17 kg s/panel"
+    }
+  ]
+}
