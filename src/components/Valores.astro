@@ -1,0 +1,171 @@
+---
+--- 
+
+<div id="valores" class="bg-gradient-to-br from-slate-900 via-blue-900/50 to-slate-900 min-h-screen flex items-center justify-center p-8 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto text-center relative z-10 w-full">
+    <!-- Título -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl lg:text-6xl font-bold text-white mb-4">
+        Nuestros
+        <span class="bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent">
+          Valores
+        </span>
+      </h1>
+      <p class="text-xl text-gray-300">
+        Principios que guían cada uno de nuestros proyectos
+      </p>
+    </div>
+
+    <!-- Contenedor de círculos -->
+    <div class="relative w-full max-w-5xl h-[700px] mx-auto">
+      
+      <!-- Círculo central con logo -->
+      <div id="centerCircle" class="valor-circle-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-full bg-gray-900 shadow-2xl flex items-center justify-center" style="z-index: 10;">
+          <div class="w-full h-20 mb-2 flex items-center justify-center px-4">
+            <img 
+              src="/public/Infitnity.png" 
+              alt="Infinity System" 
+              class="h-16 w-7xl object-contain"
+            />
+          </div>
+      </div>
+
+      <!-- Círculos de valores -->
+      <div id="circlesContainer" class="absolute inset-0"></div>
+    </div>
+  </div>
+
+  <!-- Efecto de partículas decorativo -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+</div>
+
+<style>
+  .valor-circle {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    word-wrap: break-word;
+    padding: 1.5rem;
+    line-height: 1.2;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .valor-circle:hover {
+    transform: scale(1.15) !important;
+    box-shadow: 0 20px 60px rgba(59, 130, 246, 0.4);
+    z-index: 20 !important;
+  }
+
+  .valor-circle-center {
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+  }
+
+  .valor-circle-center:hover {
+    transform: translate(-50%, -50%) scale(1.03) !important;
+  }
+</style>
+
+<script>
+  import gsap from "gsap";
+
+  const valores = [
+    { nombre: "DIGNIDAD", offsetX: -350, offsetY: -80 },
+    { nombre: "HONOR", offsetX: 100, offsetY: -200 },
+    { nombre: "AUTORIDAD", offsetX: 380, offsetY: -140 },
+    { nombre: "SERVICIO", offsetX: 250, offsetY: 0 },
+    { nombre: "CALIDAD", offsetX: 320, offsetY: 170 },
+    { nombre: "RESPETO", offsetX: -390, offsetY: 200 },
+    { nombre: "LEALTAD", offsetX: -200, offsetY: 140 },
+    { nombre: "DISCIPLINA", offsetX: -180, offsetY: -170 }
+  ];
+
+  const container = document.getElementById("circlesContainer") as HTMLDivElement;
+  const centerCircle = document.getElementById("centerCircle") as HTMLDivElement;
+
+  if (container && centerCircle) {
+    const circles: any[] = [];
+    const centerX = container.offsetWidth / 2;
+    const centerY = container.offsetHeight / 2;
+    const circleSize = 155;
+
+    // Crear círculos posicionados orgánicamente alrededor del centro
+    valores.forEach((valor, index) => {
+      const circle = document.createElement("div");
+      circle.className = `valor-circle absolute rounded-full flex items-center justify-center text-white font-bold text-center cursor-pointer bg-gradient-to-br from-blue-500/90 to-blue-700/90 border-2 border-blue-300/30`;
+      
+      circle.textContent = valor.nombre;
+      circle.style.width = circleSize + "px";
+      circle.style.height = circleSize + "px";
+      circle.style.fontSize = "1rem";
+      circle.style.zIndex = "5";
+
+      // Posición orgánica (no circular perfecta)
+      const x = centerX + valor.offsetX - circleSize / 2;
+      const y = centerY + valor.offsetY - circleSize / 2;
+
+      circle.style.left = x + "px";
+      circle.style.top = y + "px";
+
+      container.appendChild(circle);
+
+      circles.push({
+        element: circle,
+        baseX: x,
+        baseY: y
+      });
+
+      // Animación sutil de flotación con GSAP (muy reducida)
+      gsap.to(circle, {
+        y: "+=10",
+        duration: 2.5 + index * 0.3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: index * 0.2
+      });
+
+      // Rotación MUY sutil
+      gsap.to(circle, {
+        rotation: index % 2 === 0 ? 3 : -3,
+        duration: 4 + index * 0.2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: index * 0.15
+      });
+    });
+
+    // Animación de entrada inicial
+    gsap.from(".valor-circle", {
+      duration: 1.2,
+      scale: 0,
+      opacity: 0,
+      stagger: 0.1,
+      ease: "back.out(1.7)",
+      delay: 0.3
+    });
+
+    gsap.from(centerCircle, {
+      duration: 1.5,
+      scale: 0.4,
+      rotation: 360,
+      opacity: 0,
+      ease: "elastic.out(1, 0.5)",
+      delay: 0.8
+    });
+
+    // Animación MÍNIMA de respiración para el círculo central (sin afectar el centrado)
+    gsap.to(centerCircle, {
+      scale: 1.02,
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      transformOrigin: "50% 50%"
+    });
+  }
+</script>

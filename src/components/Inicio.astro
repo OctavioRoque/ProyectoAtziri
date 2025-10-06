@@ -1,0 +1,58 @@
+---
+console.log('javascript')
+---
+
+<!-- Hero Section -->
+<section id="inicio" class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen flex items-center">
+  <!-- Imagen de fondo con efecto de desvanecido -->
+  <div class="absolute inset-0">
+    <img 
+      src="/public/paneles.jpg" 
+      alt="Paneles solares" 
+      class="w-full h-full object-cover"
+    />
+    <!-- Gradiente de desvanecido izquierda a derecha -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/70 to-transparent"></div>
+  </div>
+
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10 w-full">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left Content con fondo para mejor legibilidad -->
+      <div class="space-y-8 bg-slate-900/60 backdrop-blur-sm p-8 rounded-2xl border border-blue-400/20">
+        <div class="hero-badge">
+          <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-600/20 rounded-full border border-blue-400/30 mb-6">
+            <svg class="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span class="text-sm font-medium text-blue-200">100% Energía Limpia</span>
+          </div>
+          <h1 class="hero-title text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white">
+            Reduce tu gasto en{' '}
+            <span class="bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 bg-clip-text text-transparent">
+              electricidad
+            </span>
+          </h1>
+        </div>
+
+        <p class="hero-text text-xl text-gray-300 leading-relaxed">
+          Empresa 100% mexicana comprometida con tu economía y el planeta. Instalaciones profesionales de paneles solares con garantía y resultados comprobados.
+        </p>
+
+      </div>
+
+      <!-- Right Content - Espacio para balance visual -->
+      <div class="relative flex justify-center items-center">
+        <!-- Este espacio queda para balance, la imagen ahora está de fondo -->
+        <div class="w-full h-64 lg:h-96 opacity-0"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
